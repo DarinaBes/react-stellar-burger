@@ -34,7 +34,11 @@ const App = () => {
     dispatch(resetOrderModal());
   };
 
-  const renderModalRoute = (path: string, title: string, Component: ReactNode) => (
+  const renderModalRoute = (
+    path: string,
+    title: string,
+    Component: ReactNode
+  ) => (
     <Route
       path={path}
       element={
