@@ -1,0 +1,48 @@
+.header {
+  background-color: var(--background);
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  max-width: 1240px;
+  height: 56px;
+  margin: 0 auto;
+}
+
+.menu_part_left {
+  display: flex;
+  flex-basis: 35%;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-inactive-color);
+  transition: color ease-in 0.2s;
+}
+
+.link:hover {
+  color: var(--text-primary-color);
+  transition: all ease-in 0.3s;
+}
+
+.link_active {
+  color: var(--text-primary-color);
+  user-select: none;
+  cursor: default;
+}
+
+.link_position_last {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 35%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
